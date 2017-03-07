@@ -26,7 +26,7 @@ hr.light {
     border-color: white;
 }
 
-li,ul,ol,p,div,h1,h2,h3,h4,h5,time{
+li,ul,ol,p,div,h1,h2,h3,h4,h5,time,body,html,footer{
     list-style:none;
     margin:0;
     padding:0;
@@ -454,6 +454,7 @@ footer{
     font-size:14px;
 }
 .social-font{
+    padding-top:1em;
     color:#fff;
 }
 .social-font i{
@@ -468,10 +469,6 @@ footer{
     text-algin:left;
     font-size:30px
 }
-@media (min-width: 768px) {
-    .copyright{font-size:18px;}
-    .info,.copyright{font-size:18px;}
-}
 .blog-box{
     background:#fff;
     position:relative;   
@@ -479,6 +476,7 @@ footer{
 .blog-top{
     border-bottom: 1px solid #dbdbdb;
     color: #817c7c;
+    padding-bottom:.2em;
 }
 .blog-tite{
     font-size:200%;
@@ -488,9 +486,6 @@ footer{
     word-break: normal;
     border-left:5px solid #2ca6cb;
     padding-top:.3em;   
-}
-.blog-tite a{
-    color:$theme-primary;
 }
 .blog-time::before{
     font-family: "FontAwesome";
@@ -508,4 +503,67 @@ footer{
     float:right;
     padding:.3em 4% .2em .3em;
     vertical-align:middle;
+}
+.blog-con{
+    padding: 1.5em 4%;
+    color: #413f3f;
+    font-size: 100%;
+}
+.blog-con a{
+    display: inline-block;
+    line-height: 1em;
+    padding: 6px 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background: #ddd;
+    color: #817c7c;
+    text-decoration: none;
+    margin-top: .7em;
+}
+.blog-con a:hover{
+    background-color:$theme-primary;
+    color:#fff;
+}
+.blog-con{
+    border-bottom: 1px solid #dbdbdb;
+}
+.blog-left{
+    float:left;  
+}
+.blog-right{
+    float:right;
+}
+.blog-foot{
+    font-size:16px;
+    padding:.8em 4%;
+    font-size: 100%;
+}
+.page-list .i-tag::before,.blog-right .pl::before{
+    font-family: "FontAwesome";
+    -webkit-font-smoothing: antialiased;   
+    color: #d6d6d6;
+    font-size: 100%;
+    margin-right:3px;
+}
+.page-list .i-tag::before{
+    content: "\f07b";
+}
+.blog-right .pl::before{
+    content: "\f075";
+}
+.page-list li{
+    margin-bottom:3.5em;
+}
+
+#mainNav{
+    width:100%;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+.blog-tite a,.blog-name span{
+    color:$theme-primary;
+}
+@media (min-width: 768px) {
+    .copyright{font-size:18px;}
+    .info,.copyright{font-size:18px;}
 }
