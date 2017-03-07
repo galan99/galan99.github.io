@@ -1,1 +1,24 @@
-theme: jekyll-theme-cayman
+# Site settings
+title: galan小屋
+email: 619531862@qq.com
+description: > # this means to ignore newlines until "baseurl:"
+url: http://galan99.github.io # the base hostname & protocol for your site
+
+twitter_username:
+github_username: galan99
+
+baseurl: #http://galan99.github.io
+
+author: galan99
+
+permalink: /:categories/:year/:month/:day/:title
+
+
+paginate: 3 #分页
+paginate_path: "page:num"#分页设置
+
+# Build settings
+markdown: kramdown
+
+
+gems: [jekyll-paginate]

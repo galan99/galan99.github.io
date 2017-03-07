@@ -1,0 +1,39 @@
+<section class="no-padding container" id="blog">
+	<section class="container">
+        <span class="page-title">
+            <h2>最近的文章</h2>
+        </span>
+    </section>
+	<div class="row container">	
+		<div class="col-sm-9">
+			<ul>
+			  {% for post in site.posts %}
+			    <li class="blog-box">
+			    	<div class="blog-top clearfix">
+						<h1 class="blog-tite"> 
+							<a href="{{ post.url }}" title="">Gallery Post</a>
+						</h1>
+						<p class="blog-name">By <span>{{site.github_username}}</span></p>
+						<p class="blog-time">发表于 {{ post.date | date: "%F" }}</p>
+			    	</div>
+			    	<div class="blog-con clearfix">
+			    		<p><a href="#"></a></p>
+			    		<a class="" href="#"></a>
+			    	</div>
+			    	<div class="blog-foot clearfix">
+			    		<div class="pull-left"></div>
+			    		<div class="pull-right"></div>
+			    	</div>
+			      <a href="{{ post.url }}">{{ post.title }}</a>
+			      {{ post.excerpt }}
+			      <p>{{ post.date | date: "%F" }}</p>
+			      <p>by {{ site.author}}</p>
+			    </li>
+			  {% endfor %}
+			</ul>
+		</div>
+		<div class="col-sm-3">
+			<p>导航</p>
+		</div>
+	</div>
+</section>
