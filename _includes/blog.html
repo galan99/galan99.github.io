@@ -1,10 +1,10 @@
-<section class="no-padding container" id="blog">
+<section class="no-padding" id="blog">
 	<section class="container">
         <span class="page-title">
             <h2>最近的文章</h2>
         </span>
     </section>
-	<div class="clearfix container">	
+	<div class="clearfix">	
 		<div class="col-sm-9">
 			<ul class="page-list">
 			  {% for post in site.posts %}
@@ -35,7 +35,20 @@
 			</ul>
 		</div>
 		<div class="col-sm-3">
-			<p>导航</p>
+			<div class="pside">
+				<h3 class="tit">分类</h3>
+				<ul class="list">
+					{% for item in site.categories %}
+						<li><a href="#">{{item[0]}}<sup>{{ item[1] | size }}</sup></a></li>
+					{% endfor %}
+				</ul>
+				<h3 class="tit">标签</h3>
+				<ul class="tags clearfix">
+					{% for item in site.tags %}
+						<li><a href="#">{{item[0]}}<sup>{{ item[1] | size }}</sup></a></li>
+					{% endfor %}
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>

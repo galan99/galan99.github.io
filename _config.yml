@@ -17,6 +17,13 @@ permalink: /:categories/:year/:month/:day/:title
 paginate: 3 #分页
 paginate_path: "page:num"#分页设置
 
+widgets:
+- category
+- tag
+- links
+- douban
+- rss
+
 # Build settings
 markdown: kramdown
 

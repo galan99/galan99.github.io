@@ -555,12 +555,48 @@ footer{
     margin-bottom:3.5em;
 }
 
-#mainNav{
-    width:100%;
-    overflow:hidden;
-    box-sizing:border-box;
+//首页右边导航
+.pside{
+    background:#fff;
+    min-height:200px;
+    padding:15px;
 }
-.blog-tite a,.blog-name span{
+.pside .tit{
+    font-size:20px;
+    font-weight:bold;
+    padding: 0 0 .3125em 0;
+    border-bottom: .1875em solid #ccc;
+}
+.pside .list a{
+    border-bottom: 1px solid #ccc;
+    display: block;
+    padding: .5em 5%;
+    color: #817c7c;
+}
+.pside .list{
+   margin-bottom:1.3em; 
+}
+.pside .tags a{
+    color: #817c7c;
+    display: block;
+    margin: .3125em;
+    padding: .125em .3125em;
+    background: #dbdbdb;
+}
+.pside .tags li{
+    float:left;
+}
+.pside .tags{
+    padding: .5em 0;
+}
+.pside{
+    
+}
+.pside{
+    
+}
+
+.blog-tite a,.blog-name span,.pside .tit{
     color:$theme-primary;
 }
 @media (min-width: 768px) {
