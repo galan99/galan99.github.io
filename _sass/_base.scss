@@ -44,6 +44,9 @@ a {
         color: darken($theme-primary, 10%);
     }
 }
+a:hover{
+    text-decoration:none;
+}
 
 h1,h2,h3,h4,h5,h6{
     @include sans-serif-font;
@@ -555,7 +558,7 @@ footer{
     margin-bottom:3.5em;
 }
 
-//首页右边导航
+
 .pside{
     background:#fff;
     min-height:200px;
@@ -589,12 +592,86 @@ footer{
 .pside .tags{
     padding: .5em 0;
 }
-.pside{
-    
+
+
+.oheader{}
+.ocontent{
+    width:95%;
+    margin:1em auto;
+    background:#fff;
 }
-.pside{
-    
+.ocontent .ds-thread{
+    padding: 0 4%;
+    margin:1em 0;
 }
+
+
+#page-nav {
+    background: #fafafa;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom:1em;
+    font-size:100%;
+}
+#page-nav a {
+    display: inline-block;
+    padding: .5em 1em;
+    font-size:100%;
+}
+#page-nav a {
+    color: #2ca6cb;
+}
+#page-nav a:hover {
+    background: #ccc;
+    color: #2ca6cb
+}
+#page-nav .prev {
+    float: left;
+    -webkit-transition: border-left 0.5s;
+    -moz-transition: border-left 0.5s;
+    -o-transition: border-left 0.5s;
+    -ms-transition: border-left 0.5s;
+    transition: border-left 0.5s;
+}
+#page-nav .prev span:before {
+    font-family: "FontAwesome";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f053";
+    padding-right: .5em
+}
+#page-nav .next {
+    float: right;
+}
+#page-nav .next span:before {
+    font-family: "FontAwesome";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f054";
+    padding-left: .5em
+}
+#page-nav .page-number {
+    display: none;
+    padding: .5em 1em;
+}
+@media only screen and (min-width: 768px) {
+    #page-nav .page-number {
+        display: inline-block
+    }
+}
+#page-nav .current {
+    color: #b8b8b8;
+    font-weight: bold
+}
+#page-nav .space {
+    color: #2ca6cb
+}
+
+//hover
+.blog-tite a:hover{color: #23527c;}
+
+
+
 
 .blog-tite a,.blog-name span,.pside .tit{
     color:$theme-primary;
