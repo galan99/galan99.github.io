@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, user-scalable=0, minimal-ui">
+<link rel="icon" href="{{ site.baseurl }}/img/me/me.jpg" type="image/x-icon" />
+<title>Galan小屋 | 归档</title>
+<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="{{ site.baseurl }}/css/highlight.css" type="text/css">
+<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" type="text/css">
+</head>
+<body>
+	{% include post/header.html %}
+	{% include archives/content.html %}
+	{% include post/foot.html %}
+</body>
+<script src="{{site.baseurl}}/js/jquery.js"></script>
+<script type="text/javascript">
+	$('.oclose').click(function(event){
+		var oHeight=$('.rlist li').eq(0).height()*$('.rlist li').size();
+		if($('.rlist').height()==0){
+			$('.rlist').animate({'height':oHeight+"px"});
+		}else{
+			$('.rlist').animate({'height':"0px"});
+		}		
+	});
+
+	var show_post = function(anchor){
+		if(anchor){
+	        $(".ml-right li").hide();
+	        var cls = anchor.substr(1);
+	        $(".galan" + cls).show();
+	        $(".ml-title").text(cls);
+        }
+    }
+    if(document.location.hash) {
+        show_post(document.location.hash);
+    }
+    window.onhashchange = function(){  
+        show_post(document.location.hash);  
+    } 
+    $('.ml-left a').click(function() {
+        if(document.location.hash){
+            show_post(document.location.hash);
+        }
+    });
+</script>
+</html>
