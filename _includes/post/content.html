@@ -1,19 +1,45 @@
 <div class="ocontent">
-	<div class="blogs">
-		{{ content }}
-	</div>
-	<div class="ds-thread" data-thread-key="{{page.path}}" data-title="" data-url="{{ page.url }}"></div>
-	<script type="text/javascript">
-		var duoshuoQuery = {short_name:"galan"};
-		(function() {
-			var ds = document.createElement('script');
-			ds.type = 'text/javascript';ds.async = true;
-			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-			ds.charset = 'UTF-8';
-			document.getElementsByTagName('body')[0].appendChild(ds);		
-		})();
-		window.onload=function(){
-			document.getElementById('about').style='block';
-		}
-	</script>
+	<div class="row">
+		<div class="col-sm-9">
+			<div class="ocleft">
+				<div class="blogs">
+					<div class="blog-top clearfix">
+						<h1 class="blog-tite"> 
+							<a href="{{ page.url }}" title="">{{ page.title }}</a>
+						</h1>
+						<p class="blog-name">By <span>{{site.author}}</span></p>
+						<p class="blog-time">发表于 {{ page.date | date: "%F" }}</p>
+			    	</div>
+					<div class="omycon">{{ content }}</div>
+				</div>
+				<div class="ds-thread" data-thread-key="{{page.path}}" data-title="" data-url="{{ page.url }}"></div>
+				<script type="text/javascript">
+					var duoshuoQuery = {short_name:"galan"};
+					(function() {
+						var ds = document.createElement('script');
+						ds.type = 'text/javascript';ds.async = true;
+						ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+						ds.charset = 'UTF-8';
+						document.getElementsByTagName('body')[0].appendChild(ds);		
+					})();
+				</script>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="pside">
+				<h3 class="tit">分类</h3>
+				<ul class="list">
+					{% for item in site.categories %}
+						<li><a href="#">{{item[0]}}<sup>{{ item[1] | size }}</sup></a></li>
+					{% endfor %}
+				</ul>
+				<h3 class="tit">标签</h3>
+				<ul class="tags clearfix">
+					{% for item in site.tags %}
+						<li><a href="#">{{item[0]}}<sup>{{ item[1] | size }}</sup></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>	
 </div>
