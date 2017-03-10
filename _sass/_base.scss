@@ -724,7 +724,7 @@ footer{
     right: 0;
     top: .8em;
     padding: .5em;
-    color:#fff;
+    color:#fff;    
 }
 .oclose span{
     display:block;
@@ -738,6 +738,7 @@ footer{
 .rlist{
     padding-top:.5em;
     height:0;
+    overflow: hidden;
 }
 .rlist a{
     color:#fff;
@@ -871,14 +872,16 @@ footer{
 }
 @media (min-width: 768px) {
     .copyright{font-size:18px;}
-    .info,.copyright{font-size:18px;}
-    .rlist{float:right;padding-top:0em;height:auto;}
+    .info,.copyright{font-size:18px;}  
     .rlist li{float:left;}
     .rlist a{padding:.2em 1.5em;}
+    .rlist{float:right;padding-top:0em;height:auto;}
     .ocontent .blog-tite{text-align:center;font-size:200%;padding:20px 0;}
     .ml-right span{display:inline;}
+    .oclose{display:none;}   
 }
 
 @media (max-width: 768px){
     #ds-smilies-tooltip{width:auto!important;}
+
 }
