@@ -758,12 +758,12 @@ footer{
 }
 .omycon{
     padding: 1.5em 4%;
-    color: #413f3f;
-    font-size: 100%;
+    color: #817c7c;
+    font-size: 100%;    
 }
 .omycon p{
-    line-height: 1.5;
-    margin-top: .7em;
+    line-height: 1.4;
+    word-break:break-all;
 }
 .omycon blockquote{
     border-left:3px solid $theme-primary;
@@ -782,9 +782,16 @@ footer{
     list-style: disc;
 }
 .omycon h1,.omycon h2,.omycon h3,.omycon h4{
-    border-bottom: 2px solid #dbdbdb;
-    line-height: 1.2em;
-    padding:5px 0;
+    font-size: 140%;
+    line-height: 1.8;
+    color:#333;
+}
+.omycon img{
+    border: 1px solid #e9e9e9;
+    margin:5px auto;
+    border-radius:5px;
+    vertical-align: middle;
+    display: block;
 }
 .omycon hr{
     max-width:100%;
