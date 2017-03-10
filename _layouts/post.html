@@ -14,15 +14,5 @@
 	{% include post/content.html %}
 	{% include post/foot.html %}
 </body>
-<script src="{{site.baseurl}}/js/jquery.js"></script>
-<script type="text/javascript">
-	$('.oclose').click(function(event){
-		var oHeight=$('.rlist li').eq(0).height()*$('.rlist li').size();
-		if($('.rlist').height()==0){
-			$('.rlist').animate({'height':oHeight+"px"});
-		}else{
-			$('.rlist').animate({'height':"0px"});
-		}
-	});
-</script>
+	{% include js.html %}
 </html>

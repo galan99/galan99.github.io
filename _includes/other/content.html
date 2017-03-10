@@ -1,0 +1,46 @@
+<div class="ocontent" id="archives">
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="ml-left" title="{{page.type}}">
+				<h3><span></span><em class="ml-title">{% if page.type == 'archives' %}归档{% endif %}</em></h3>				
+				<ul>
+				{% if page.type == 'archives' %}
+					{% assign count = 1 %}
+				    {% for post in site.posts  %}
+					    {% capture this_date %}{{ post.date }}{% endcapture %}
+					    {% capture next_date %}{{ post.previous.date }}{% endcapture %}
+					    {% capture this_date_str %}{{ this_date | date: "%Y-%m" }}{% endcapture %}
+					    {% capture next_date_str %}{{ next_date | date: "%Y-%m" }}{% endcapture %}
+					    {% if this_date_str != next_date_str %}
+					    <li><a href="{{page.url}}#{{ this_date | date: "%Y-%m" }}">{{ this_date | date: "%Y 年 %m 月" }}<span>({{ count }})</span></a></li>
+					    {% assign count = 1 %}
+					    {% else %}
+					    {% assign count = count | plus: 1 %}
+				    	{% endif %}
+				    {% endfor %}
+			    {% endif %}
+			    {% if page.type == 'tags' %}
+			    	{% for tags in site.tags  %}
+						<li><a href="{{tags.url}}#{{tags[0]}}">{{tags[0]}}<span>({{tags[1] | size}})</span></a></li>
+					{% endfor %}
+			    {% endif %}
+			    {% if page.type == 'categories' %}
+					{% for categories in site.categories  %}
+						<li><a href="{{categories.url}}#{{categories[0]}}">{{categories[0]}}<span>({{categories[1] | size}})</span></a></li>
+					{% endfor %}
+			    {% endif %}
+			    </ul>
+			</div>
+		</div>
+		<div class="col-sm-9">
+			<ul class="ml-right">
+				{% if page.type == 'archives' %}{% endif %}
+				{% for post in site.posts %}
+					<li class="galan{% if page.type == 'archives' %}{{post.date | date: "%Y-%m"}}{% endif %}{% if page.type == 'tags' %}{{post.tags}}{% endif %}{% if page.type == 'categories' %}{{post.category}}{% endif %}">
+						<a href="{{post.url}}"><time>{{ post.date | date: "%Y 年 %m 月" }}</time><span>{{post.title}}</span></a>
+					</li>
+			    {% endfor %}			    
+			</ul>
+		</div>
+	</div>	
+</div>
