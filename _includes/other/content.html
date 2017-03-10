@@ -36,7 +36,7 @@
 			<ul class="ml-right">
 				{% if page.type == 'archives' %}{% endif %}
 				{% for post in site.posts %}
-					<li class="galan{% if page.type == 'archives' %}{{post.date | date: "%Y-%m"}}{% endif %}{% if page.type == 'tags' %}{{post.tags}}{% endif %}{% if page.type == 'categories' %}{{post.category}}{% endif %}">
+					<li class="{% if page.type == 'archives' %}galan{{post.date | date: "%Y-%m"}}{% endif %}{% if page.type == 'tags' %}{% for tag in post.tags %}galan{{tag}} {% endfor %}{% endif %}{% if page.type == 'categories' %}galan{{post.category}}{% endif %}">
 						<a href="{{post.url}}"><time>{{ post.date | date: "%Y 年 %m 月" }}</time><span>{{post.title}}</span></a>
 					</li>
 			    {% endfor %}			    

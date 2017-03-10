@@ -24,7 +24,9 @@
 				    	<div class="blog-foot clearfix">
 				    		<div class="blog-left">
 				    			<span class="i-tag"></span>
-				    			<a class="a" href="{{site.baseurl}}/tags/#{{post.tags}}">{{post.tags}}</a>
+				    			{% for tag in post.tags %}
+				    				<a class="a" href="{{site.baseurl}}/tags/#{{tag}}">{{tag}}</a>
+				    			{% endfor %}
 				    		</div>
 				    		<div class="blog-right">
 				    			<span class="pl"></span>
