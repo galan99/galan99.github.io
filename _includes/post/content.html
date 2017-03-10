@@ -30,13 +30,13 @@
 				<h3 class="tit">分类</h3>
 				<ul class="list">
 					{% for item in site.categories %}
-						<li><a href="#">{{item[0]}}<sup>{{ item[1] | size }}</sup></a></li>
+						<li><a href="{{site.baseurl}}/categories/#{{item[0]}}">{{item[0]}}<sup>{{ item[1] | size }}</sup></a></li>
 					{% endfor %}
 				</ul>
 				<h3 class="tit">标签</h3>
 				<ul class="tags clearfix">
 					{% for item in site.tags %}
-						<li><a href="#">{{item[0]}}<sup>{{ item[1] | size }}</sup></a></li>
+						<li><a href="{{site.baseurl}}/tags/#{{item[0]}}">{{item[0]}}<sup>{{ item[1] | size }}</sup></a></li>
 					{% endfor %}
 				</ul>
 			</div>
