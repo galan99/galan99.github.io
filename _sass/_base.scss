@@ -781,6 +781,16 @@ footer{
 .omycon li{
     list-style: disc;
 }
+.omycon h1,.omycon h2,.omycon h3,.omycon h4{
+    border-bottom: 2px solid #dbdbdb;
+    line-height: 1.2em;
+    padding:5px 0;
+}
+.omycon hr{
+    max-width:100%;
+    border-width:1px;
+    border-color:#dbdbdb;
+}
 
 .ml-left{
     padding:2em 0 2em .5em;
@@ -846,9 +856,7 @@ footer{
     vertical-align:middle;
     display:block; 
 }
-.ml-right{
-    
-}
+
 .blog-tite a,.blog-name span,.pside .tit{
     color:$theme-primary;
 }
