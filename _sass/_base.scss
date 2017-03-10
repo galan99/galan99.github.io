@@ -857,6 +857,8 @@ footer{
     display:block; 
 }
 
+
+
 .blog-tite a,.blog-name span,.pside .tit{
     color:$theme-primary;
 }
@@ -868,4 +870,8 @@ footer{
     .rlist a{padding:.2em 1.5em;}
     .ocontent .blog-tite{text-align:center;font-size:200%;padding:20px 0;}
     .ml-right span{display:inline;}
+}
+
+@media (max-width: 768px){
+    #ds-smilies-tooltip{width:auto!important;}
 }
