@@ -866,6 +866,49 @@ footer{
     display:block; 
 }
 
+#back-top {
+    display:none;
+    position: fixed;
+    bottom: 110px;
+    right: 2em;
+    z-index:1000;
+}
+#back-top a {
+    background: rgba(0, 0, 0, 0.45);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    width: 40px;
+    height: 40px;
+    display: block;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px 3px;
+    text-decoration: none;
+}
+#back-top i {
+    font-size: 24px;
+    line-height: 40px;
+    vertical-align: top;
+}
+#back-top .fa{
+    display:inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-chevron-up:before{
+    content: "\f077";
+}
+.fa-chevron-up:before {
+    color: rgba(252,252,252,0.81);
+}
+
 
 
 .blog-tite a,.blog-name span,.pside .tit{
@@ -884,5 +927,7 @@ footer{
 
 @media (max-width: 768px){
     #ds-smilies-tooltip{width:auto!important;}
-
+    #back-top{
+        right: 0em;
+    }
 }
