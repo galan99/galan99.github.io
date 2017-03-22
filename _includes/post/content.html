@@ -12,17 +12,16 @@
 			    	</div>
 					<div class="omycon">{{ content }}</div>
 				</div>
-				<div class="ds-thread" data-thread-key="{{page.path}}" data-title="" data-url="{{ page.url }}"></div>
-				<script type="text/javascript">
-					var duoshuoQuery = {short_name:"galan"};
-					(function() {
-						var ds = document.createElement('script');
-						ds.type = 'text/javascript';ds.async = true;
-						ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-						ds.charset = 'UTF-8';
-						document.getElementsByTagName('body')[0].appendChild(ds);		
-					})();
+				<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+				<script>
+				  var cloudTieConfig = {
+				    url: "http://galan99.cn", 
+				    sourceId: "",
+				    productKey: "98b6f4431273430c9021beab7b8bd7c0",
+				    target: "cloud-tie-wrapper"
+				  };
 				</script>
+				<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
 			</div>
 		</div>
 		<div class="col-sm-3">
