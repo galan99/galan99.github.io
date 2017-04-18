@@ -11,4 +11,18 @@
   {% include foot.html %}
   {% include scripts.html %}
 </body>
+<script type="text/javascript">
+	$(window).scroll(function () {
+		
+		if ($(this).scrollTop() > 250) {
+			$('#back-top').fadeIn();
+		} else {
+			$('#back-top').fadeOut();
+		}
+	});
+	$('#back-top a').click(function () {
+		$('body,html').animate({scrollTop:0},800);
+		return false;
+	});
+</script>
 </html>

@@ -17,11 +17,15 @@
 	        $(".ml-title").text(cls);
         }
     }
-    if(document.location.hash) {
-        show_post(document.location.hash);
-    }
-    window.onhashchange = function(){  
-        show_post(document.location.hash);  
+
+    var hashName=location.pathname;    
+    if( (hashName.indexOf('archives')!=-1) || (hashName.indexOf('categories')!=-1) || (hashName.indexOf('tags')!=-1) ){
+	    if(document.location.hash) {
+	        show_post(document.location.hash);
+	    }
+	    window.onhashchange = function(){
+	        show_post(document.location.hash);  
+	    }
     } 
     $('.ml-left a').click(function() {
         if(document.location.hash){
