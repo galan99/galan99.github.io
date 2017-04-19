@@ -224,7 +224,7 @@ header {
     .header-content {
         position: relative;
         text-align: center;
-        padding: 100px 15px 100px;
+        padding: 70px 15px 40px;
         width: 100%;
         .header-content-inner {
             h1 {
@@ -245,7 +245,7 @@ header {
         }
     }
     @media (min-width: 768px) {
-        min-height: 100%;
+        min-height:450px;
         .header-content {
             position: absolute;
             top: 50%;
