@@ -78,7 +78,7 @@ excerpt: wampserver配置多站点，安装完wampserver后，我们要做的肯
 127.0.0.1       localhost
 127.0.0.1       my.member.test.com
 
-//电脑开始菜单输入notepad 管理员身份运行
+//电脑开始菜单输入notepad 用这个工具编辑 以管理员身份运行才能保存
 ```
 
 > 4：重启wampserver 就能访问 my.member.test.com 以及localhost 这两个站点了
