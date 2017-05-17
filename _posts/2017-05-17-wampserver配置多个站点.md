@@ -101,9 +101,9 @@ excerpt: wampserver配置多站点，安装完wampserver后，我们要做的肯
 
 > 二、根据版本选择扩展包
 
-php_redis.dll 下载地址：(windows.php.net - /downloads/pecl/snaps/redis/2.2.5/)[http://windows.php.net/downloads/pecl/snaps/redis/2.2.5/]
+php_redis.dll 下载地址：[http://windows.php.net - /downloads/pecl/snaps/redis/2.2.5/](http://windows.php.net/downloads/pecl/snaps/redis/2.2.5/)
 
-php_igbinary.dll 下载地址：(windows.php.net - /downloads/pecl/releases/igbinary/1.2.1/)[http://windows.php.net/downloads/pecl/releases/igbinary/1.2.1/]
+php_igbinary.dll 下载地址：[http://windows.php.net - /downloads/pecl/releases/igbinary/1.2.1/](http://windows.php.net/downloads/pecl/releases/igbinary/1.2.1/)
 
 ![图片]({{site.baseurl}}/assets/wampserver/2.png)
 ![图片]({{site.baseurl}}/assets/wampserver/3.png)
