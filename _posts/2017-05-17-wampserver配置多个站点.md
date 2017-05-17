@@ -92,6 +92,7 @@ excerpt: wampserver配置多站点，安装完wampserver后，我们要做的肯
 
 ```javascript
 <?php phpinfo() ;?> 
+
 //创建a.php，内容如上，访问 my.member.test.com/a.php
 //↑ PHP版本 5.5.12，编译器版本 Visual C++ 2012，CPU架构 x86
 ```
