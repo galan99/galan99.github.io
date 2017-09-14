@@ -12,16 +12,15 @@
 			    	</div>
 					<div class="omycon">{{ content }}</div>
 				</div>
-				<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-				<script>
-				  var cloudTieConfig = {
-				    url: "http://galan99.cn"+location.pathname, 
-				    sourceId: "",
-				    productKey: "98b6f4431273430c9021beab7b8bd7c0",
-				    target: "cloud-tie-wrapper"
-				  };
+				<!--PC版-->
+				<div id="SOHUCS" sid={{page.date}}></div>
+				<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+				<script type="text/javascript">
+				window.changyan.api.config({
+					appid: 'cyrxFweDu',
+					conf: 'f35d2bda11bb443c9a08c2bdc5d2bf08'
+				});
 				</script>
-				<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
 			</div>
 		</div>
 		<div class="col-sm-3">
