@@ -31,7 +31,7 @@
 				    		<div class="blog-right">
 				    			<span class="pl"></span>
 				    			<a class="apl ds-thread-count" href="{{ post.url }}" data-thread-key="{{ post.path }}" data-count-type="comments">评论</a>
-				    			<span id = "sourceId::{{ post.date}}" class = "cy_cmt_count" ></span>
+				    			<span id = 'sourceId::{{ post.date | date: "%F" }}' class = "cy_cmt_count" ></span>
 				    		</div>
 				    	</div>
 				    </li>
