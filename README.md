@@ -17,8 +17,13 @@
 | Help      | Display the help window.|
 | Close     | Closes a window     |
 
-. [X] 完成
-. [] 未完成
+[x] C
+[x] C++
+[x] Java
+[x] Qt
+[x] Android
+[ ] C#
+[ ] .NET
 
 
 借鉴此处<https://volny.github.io/creative-theme-jekyll/>
