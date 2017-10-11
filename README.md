@@ -18,7 +18,7 @@
 | Close     | Closes a window     |
 
 - [x] C
-- x] C++
+- [x] C++
 - [x] Java
 - [x] Qt
 - [x] Android
