@@ -17,8 +17,10 @@
 | Help      | Display the help window.|
 | Close     | Closes a window     |
 
+. [X] 完成
+. [] 未完成
 
 
-## 借鉴此处<https://volny.github.io/creative-theme-jekyll/>
+借鉴此处<https://volny.github.io/creative-theme-jekyll/>
 
 
