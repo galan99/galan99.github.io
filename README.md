@@ -17,13 +17,13 @@
 | Help      | Display the help window.|
 | Close     | Closes a window     |
 
-[x] C
-[x] C++
-[x] Java
-[x] Qt
-[x] Android
-[ ] C#
-[ ] .NET
+- [x] C
+- x] C++
+- [x] Java
+- [x] Qt
+- [x] Android
+- [ ] C#
+- [ ] .NET
 
 
 借鉴此处<https://volny.github.io/creative-theme-jekyll/>
