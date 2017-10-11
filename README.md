@@ -1,7 +1,12 @@
-#博客地址
+# 静态博客
 
 [在线预览](https://galan99.github.io/)
-# Creative Theme for Jekyll
+
+用的jekyll搭建的静态博客
+
+- 列表1
+- 列表2
+- 列表3
 
 A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
 
