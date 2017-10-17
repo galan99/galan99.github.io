@@ -1,17 +1,38 @@
-#博客地址
+# 静态博客
 
 [在线预览](https://galan99.github.io/)
-# Creative Theme for Jekyll
 
-A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
+用的jekyll搭建的静态博客
 
-Creative is a one page Bootstrap theme for creatives, small businesses, and other multipurpose uses.
-The theme includes a number of rich features and plugins that you can use as a great boilerplate for your next Jekyll project! 
+借鉴此处<https://volny.github.io/creative-theme-jekyll/>
 
-See it live in action at <https://volny.github.io/creative-theme-jekyll/>
+***
+以下是markdown常用语法
 
-## To use the Creative Theme template in your project
+- 列表1
+- 列表2
+- 列表3
 
-- Start by adding your info in `_config.yml`
-- In `_layouts/front.html` reorder or remove section as you prefer.
+
+
+```java (type)
+    code here
+```
+
+| 名字 | 描述          |
+| ------------- | ----------- |
+| Help      | Display the help window.|
+| Close     | Closes a window     |
+
+- [x] C
+- [x] C++
+- [x] Java
+- [x] Qt
+- [x] Android
+- [ ] C#
+- [ ] .NET
+
+
+
+
 
