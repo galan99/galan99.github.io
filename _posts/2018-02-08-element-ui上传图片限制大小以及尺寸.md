@@ -4,7 +4,7 @@ published: true
 title: 解决element-ui 中upload组件使用多个时无法绑定对应的元素,以及上传前限制图片大小，格式以及尺寸
 category: web
 tags: 
-  - [vue]
+  - [vue,element-ui]
 excerpt: 我们在一个列表中分别都需要有upload组件的时候也就涉及到了多个upload同时存在，可以在success回调中拿到上传成功的图片已经成功的response，多个也可以，但是，当多个同类型的upload同时存在的时候，怎么知道回调里面的fileList该与谁关联
 
 ---
