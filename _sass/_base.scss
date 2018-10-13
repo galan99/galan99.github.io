@@ -902,6 +902,11 @@ footer{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+#pop_ad{
+    display:none!important;
+}
+
 .fa-chevron-up:before{
     content: "\f077";
 }
@@ -932,6 +937,3 @@ footer{
     }
 }
 
-#pop_ad{
-    display:none!important;
-}
