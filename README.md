@@ -33,6 +33,12 @@
 - [ ] .NET
 
 
+## 我的联系方式
 
+<div align=center>
+<img src='https://galan99.github.io/img/me/wx.png' width='300'>
+</div>
+<br>
+<div align=center>风里雨里我在这儿等你，欢迎勾搭！</div>
 
 
