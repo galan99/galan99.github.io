@@ -20,7 +20,8 @@ excerpt: 在使用vue版本的ElementUI中的table功能的时候还是遇到了
 <br/>
 
 某些行需要展开，某些行不需要展开：<br/>
-:row-class-name="setClassName", 行的 className 的回调方法，也可以使用字符串为所有行设置一个固定的 className
+:row-class-name="setClassName", 行的 className 的回调方法，也可以使用字符串为所有行设置一个固定的 className<br/>
+<br/>
 <br/>
 
 ```javascript
