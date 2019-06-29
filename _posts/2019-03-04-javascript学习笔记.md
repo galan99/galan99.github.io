@@ -38,7 +38,7 @@ excerpt: javascript基础知识，用来巩固技能，记录下来方便以后�
 24、介绍闭包，使用场景
 25、get和post有什么区别
 26、实现一个三角形
-27、
+27、javascript事件循环
 ```
 
 ## javascript原型
@@ -57,6 +57,44 @@ Person 就是一个构造函数, person1是一个实例对象。
 
 那什么是原型呢？你可以这样理解：每一个JavaScript对象(null除外)在创建的时候就会与之关联另一个对象，这个对象就是我们所说的原型，每一个对象都会从原型"继承"属性。
 
+```
+
+```code
+面向对象
+对象有两种属性：数据属性和访问器属性
+1.数据属性
+通过object.defineProperty(obj, 'newkey', {configurable:true, enumrable: true, writable: true, value: 'newvalue'})可以给对象的属性添加属性、删除属性、对属性进行拦截
+configurable: 设置是否可以删除属性
+enumrable：设置是否可以for in查询
+writable: 设置是否可以修改属性
+value：返回这个属性的数据值，默认返回undefined
+调用object.defineProperty如果不指定，前三个行为都默认会false
+
+
+2.访问器属性
+getter,setter与value不能同时存在
+object.defineProperty(obj, 'newkey', {configurable:true, enumrable: true, set: function(){}, get:function(){}})
+
+// 设置多个属性
+var json = {}
+object.defineProperties(json, {
+  name:{
+    value: 'xiaoming'
+  },
+  age: {
+    value: 20
+  },
+  sex: {
+    get: function(){
+      return 'boy'
+    },
+    set: function(newVal){
+      if(newVal === 'girl'){
+        this.name = 'xiaohong'
+      }
+    }
+  }
+})
 ```
 
 
